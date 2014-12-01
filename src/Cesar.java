@@ -1,6 +1,11 @@
 
 public class Cesar {
 
+	/**
+	 * Chiphers a number to Caesar chipper
+	 * @param input
+	 * @return
+	 */
 	public static String cesar(String input){
 		
 		String normal = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz ";
@@ -9,7 +14,7 @@ public class Cesar {
 		char[] inputAsChar = input.toCharArray();
 		
 		for(int i = 0; i < inputAsChar.length; i++){
-			int index = normal.indexOf(inputAsChar[i]);
+			int index = normal.indexOf( inputAsChar[i] );
 			secret += cesar.charAt(index);
 		}
 		return secret;
@@ -23,6 +28,9 @@ public class Cesar {
 		String unos = TextIO.getln();
 		System.out.println(unos);
 		System.out.println(cesar(unos));
+		
+		System.out.println("gorjan".indexOf("a"));
+		
 	}
 
 }
